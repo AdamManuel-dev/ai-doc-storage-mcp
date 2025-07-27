@@ -8,50 +8,72 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Coverage](https://img.shields.io/badge/coverage-95%+-brightgreen.svg)](https://github.com/ai-doc-storage/ai-doc-storage-mcp)
 
+---
+
 ## 🎯 Overview
 
 AI-First Document Storage MCP represents a paradigm shift in how we think about document management for artificial intelligence systems. Unlike traditional storage solutions that treat all content as mere text, our platform understands the semantic relationships, logical structures, and contextual meaning within code and documentation.
 
 This revolutionary approach addresses the fundamental disconnect between how AI agents need to process information and how current storage systems organize it. When an AI agent asks "show me all authentication implementations that handle user sessions," traditional systems resort to keyword matching and return overwhelming, often irrelevant results. Our platform understands the intent, analyzes the code semantically, and provides precisely what the agent needs with full reasoning transparency.
 
-### ✨ The AI-Native Difference
+### 📋 Table of Contents
 
-**The AI Agent Revolution Is Here**
+- [✨ The AI-Native Difference](#-the-ai-native-difference)
+- [🧠 Why Traditional Storage Fails AI Agents](#-why-traditional-storage-fails-ai-agents)  
+- [🚀 Quick Start](#-quick-start)
+- [🏗️ Architecture & Technology Foundations](#️-architecture--technology-foundations)
+- [🔍 Core Capabilities Deep Dive](#-core-capabilities-deep-dive)
+- [📈 Performance and Reliability](#-performance-and-reliability)
+- [🛡️ Security and Compliance for AI Systems](#️-security-and-compliance-for-ai-systems)
+- [🌟 Future Vision and Roadmap](#-future-vision-and-roadmap)
+- [🤝 Contributing to the Future](#-contributing-to-the-future)
+- [📞 Getting Started and Support](#-getting-started-and-support)
+
+---
+
+## ✨ The AI-Native Difference
+
+### The AI Agent Revolution Is Here
+
 The numbers speak for themselves: according to GitHub's 2024 Developer Survey of 2,000 enterprise developers across four countries, **97% of developers have used AI coding tools** at some point, with **76% actively using or planning to use AI tools** in their development process. Stack Overflow's 2024 survey corroborates this trend, showing **82% of developers currently use AI for writing code** and **68% for searching answers**.
 
 But here's the critical insight: while AI adoption has exploded, the infrastructure supporting these agents remains fundamentally inadequate. Traditional document storage systems were designed for human consumption patterns - browsing directories, opening one file at a time, reading documents linearly. AI agents operate with fundamentally different requirements.
 
-**Beyond Text Matching to True Understanding**
+### Beyond Text Matching to True Understanding
 Research from multiple academic studies reveals a phenomenon called "Lost in the Distance" - where AI agent performance degrades significantly when related information is separated by irrelevant content. A 2025 study by Wang et al. demonstrates that while AI agents can handle edge noise with little impact, their ability to reason about distant relationships declines sharply as intervening noise grows.
 
 This isn't just an academic problem. When GitHub's research shows that **66% of developers don't trust AI output** and **63% say AI tools lack context of codebases**, we're seeing real-world evidence of this fundamental mismatch between how AI agents need information and how traditional systems provide it.
 
 Our platform addresses this by providing semantic understanding that connects related concepts regardless of where they appear in your codebase. Instead of keyword matching that returns "authenticate()" and misses "checkUserCredentials()" performing the same function, our system understands functional equivalence and semantic relationships.
 
-**Chain of Thought Reasoning: Addressing the Trust Gap**
+### Chain of Thought Reasoning: Addressing the Trust Gap
+
 GitHub's 2024 research reveals a critical challenge: while AI tools increase productivity by up to 55%, developer trust remains fragmented. The Stack Overflow survey shows that **45% of professional developers believe AI tools are bad at handling complex tasks**, and enterprise teams report that lack of reasoning transparency is the primary barrier to AI adoption.
 
 Our Chain of Thought implementation directly addresses this trust deficit. Every operation provides a complete reasoning trace showing how conclusions were reached. This isn't just logging - it's genuine AI reasoning that can be inspected, questioned, and improved over time. When an AI agent suggests a refactoring or identifies a security vulnerability, developers can see the exact logical steps that led to that conclusion.
 
 Enterprise customers report that this transparency feature alone increases their AI adoption rates by 40%, as audit teams can verify decision-making processes and development teams can learn from AI reasoning patterns.
 
-**Multi-Agent Collaboration: The Future of Development**
+### Multi-Agent Collaboration: The Future of Development
+
 The GitHub survey reveals a fascinating trend: **47% of developers spend their AI-saved time on system design and collaboration**, indicating that AI is freeing developers for higher-level thinking. But current systems fail to support the multi-agent future that's rapidly emerging.
 
 Modern AI development involves specialized agents working in concert - security-focused agents identifying vulnerabilities, performance agents optimizing algorithms, architecture agents ensuring design consistency. Our platform enables these agents to work together seamlessly, sharing discovered patterns and coordinating activities to avoid conflicts.
 
 Real-world deployment data shows that organizations using multi-agent AI systems see 60% faster issue resolution and 35% fewer architectural inconsistencies compared to single-agent approaches. However, this is only possible when agents can maintain shared context and build upon each other's insights.
 
-**Real-Time Code Intelligence: Proactive vs. Reactive Development**
+### Real-Time Code Intelligence: Proactive vs. Reactive Development
 JetBrains' 2023 Developer Ecosystem Survey found that **84% of developers are familiar with generative AI tools**, but most still use them reactively - writing code first, then seeking AI assistance with debugging or optimization. This reactive approach fails to leverage AI's predictive capabilities.
 
 Our real-time code intelligence transforms AI assistance from reactive to proactive. As code changes, the system immediately understands implications across the entire codebase. When a function signature changes, affected calls are identified instantly. When new security vulnerability patterns emerge, potentially affected code is flagged before deployment.
 
 Early adopters report 70% faster bug detection and 45% fewer production incidents when using proactive AI assistance compared to traditional reactive debugging approaches.
 
-### 🧠 Why Traditional Storage Fails AI Agents
+---
 
-**The Context Fragmentation Problem: Research-Backed Evidence**
+## 🧠 Why Traditional Storage Fails AI Agents
+
+### The Context Fragmentation Problem: Research-Backed Evidence
 Multiple peer-reviewed studies have documented the systematic failure of traditional storage when supporting AI agents. Research by Databricks on long-context RAG performance reveals that **most AI models show declining performance as context length increases beyond 16-32k tokens**, despite having much larger theoretical context windows.
 
 The core issue is context fragmentation. Traditional storage systems excel at organizing files but catastrophically fail at maintaining logical relationships that AI agents require. Consider the research findings:
@@ -62,7 +84,8 @@ The core issue is context fragmentation. Traditional storage systems excel at or
 
 Real-world impact: An AI agent trying to understand a user authentication flow might need to correlate code across dozens of files - database models, API endpoints, middleware functions, test cases, and documentation. Traditional systems force agents to jump between disconnected pieces, losing critical context with each transition. Research shows this pattern reduces AI effectiveness by **60-80%** compared to semantically connected information.
 
-**Semantic Blindness: The Vocabulary Problem**
+### Semantic Blindness: The Vocabulary Problem
+
 Academic research on "needle-in-a-haystack" tasks reveals a fundamental limitation: **smaller semantic needles are more difficult for AI models to find**. Traditional file-based storage exacerbates this by treating semantically equivalent concepts as completely separate entities.
 
 The evidence is stark:
@@ -74,7 +97,7 @@ Research from Cornell University's 2025 study "Lost in the Haystack" demonstrate
 
 AI agents need to understand semantic equivalence, recognize patterns across different naming conventions, and identify functionally similar code regardless of stylistic differences. Traditional storage systems provide none of these capabilities.
 
-**Explainability Gap: The Black Box Problem**
+### Explainability Gap: The Black Box Problem
 Recent enterprise surveys reveal that **79% of developers cite "misinformation and disinformation in AI results"** as their top ethical concern, while **65% worry about "missing or incorrect attribution."** This directly traces back to traditional storage systems' inability to provide reasoning context.
 
 When traditional systems return search results, they operate as black boxes - unable to explain why specific documents were chosen, how they relate to the query, or what logical connections exist between results. This explainability gap creates several critical problems:
@@ -85,15 +108,18 @@ When traditional systems return search results, they operate as black boxes - un
 
 Research from GitHub's 2024 enterprise survey shows that organizations with explainable AI storage see **40% higher AI adoption rates** and **60% fewer AI-related incidents** compared to those using traditional systems.
 
-**Scale and Performance Mismatches: The Computational Reality**
+### Scale and Performance Mismatches: The Computational Reality
+
 Perhaps the most damning evidence against traditional storage comes from performance research on large-context AI applications. Multiple studies reveal fundamental architectural mismatches:
 
-**Context Window Utilization Crisis:**
+#### Context Window Utilization Crisis
+
 - Databricks research on 20+ leading AI models found that **only a handful can maintain consistent accuracy at long context above 64k tokens**
 - The "effective context length" is often **significantly shorter than the supported context length**, with accuracy decreasing as context grows
 - Models like GPT-4 show **99.3% accuracy at 1K tokens but drop to 69.7% at 32K tokens** when using traditional retrieval methods
 
-**Processing Pattern Mismatches:**
+#### Processing Pattern Mismatches
+
 Traditional storage systems optimize for human access patterns:
 - Opening one file at a time
 - Browsing directory structures sequentially  
@@ -134,13 +160,16 @@ docker-compose up -d
 
 Once running, you can begin uploading documents and immediately benefit from AI-powered analysis, semantic search, and reasoning capabilities. The system automatically detects file types, extracts code symbols, builds dependency graphs, and generates embeddings for semantic search.
 
+---
+
 ## 🏗️ Architecture & Technology Foundations
 
 ### The Multi-Layered Intelligence Stack
 
 Our architecture represents a radical reimagining of how storage systems can serve artificial intelligence workloads. Unlike traditional storage architectures that retrofit AI capabilities onto human-designed systems, we've built from the ground up with AI agents as the primary users. This fundamental shift in perspective influences every architectural decision, from our choice of runtime technologies to our data organization patterns.
 
-**The AI-First Runtime Foundation**
+#### The AI-First Runtime Foundation
+
 At the foundation lies a high-performance Node.js 20+ runtime, but not just any Node.js deployment. Our runtime is extensively optimized for the unique characteristics of AI workloads. Research from major cloud providers shows that AI applications have fundamentally different performance profiles compared to traditional web applications:
 
 - **Concurrent Connection Patterns**: While web applications typically handle hundreds of concurrent users, AI agent systems must support thousands of simultaneous connections, each potentially running complex reasoning chains
@@ -149,68 +178,64 @@ At the foundation lies a high-performance Node.js 20+ runtime, but not just any 
 
 Our Node.js configuration addresses these patterns with custom memory management, optimized garbage collection tuning for large object handling, and specialized threading patterns that minimize context switching overhead during heavy AI operations.
 
-**Express.js: Clean Architecture for AI Systems**
+#### Express.js: Clean Architecture for AI Systems
+
 Express.js provides our API framework, but again, configured specifically for AI agent needs. Traditional web frameworks optimize for human response times (200-500ms is acceptable), but AI agents require sub-50ms API responses to maintain reasoning coherence. Our Express implementation includes:
 
 - **Specialized Middleware Stack**: Custom middleware for AI agent authentication, request prioritization based on reasoning complexity, and intelligent request queuing that prevents inference cascades
 - **Memory-Efficient Request Handling**: AI agents often send large context payloads. Our request handling pipeline streams and processes these payloads without loading entire requests into memory
 - **Adaptive Rate Limiting**: Unlike traditional rate limiting based on request count, our system implements semantic rate limiting that considers the computational complexity of each request
 
-**Vector Intelligence Layer: Beyond Traditional Databases**
+#### Vector Intelligence Layer: Beyond Traditional Databases
 The heart of our semantic understanding infrastructure represents a fundamental departure from traditional database architecture. While relational databases organize information in rigid tables and document databases store data in flexible schemas, vector databases understand meaning itself.
 
 Our primary vector engine, Weaviate, provides capabilities that traditional storage simply cannot match:
 
-**Semantic Understanding at Scale**: When an AI agent searches for "authentication logic," traditional systems perform text matching against field names and content. Weaviate understands that this query relates to concepts like "user verification," "credential validation," "login processes," and "access control" - even when those exact terms don't appear in the target documents.
+- **Semantic Understanding at Scale**: When an AI agent searches for "authentication logic," traditional systems perform text matching against field names and content. Weaviate understands that this query relates to concepts like "user verification," "credential validation," "login processes," and "access control" - even when those exact terms don't appear in the target documents.
 
-**Multi-Modal Knowledge Representation**: Unlike traditional databases that separate different data types (text in one table, metadata in another), our vector system maintains unified semantic representations across code, documentation, comments, test cases, and architectural diagrams. This enables AI agents to understand relationships that span multiple representation modes.
+- **Multi-Modal Knowledge Representation**: Unlike traditional databases that separate different data types (text in one table, metadata in another), our vector system maintains unified semantic representations across code, documentation, comments, test cases, and architectural diagrams. This enables AI agents to understand relationships that span multiple representation modes.
 
-**Dynamic Schema Evolution**: Traditional databases require predefined schemas that become constraints as understanding evolves. Our vector database adapts its understanding as new code patterns emerge, automatically expanding its semantic model without requiring schema migrations or system downtime.
+- **Dynamic Schema Evolution**: Traditional databases require predefined schemas that become constraints as understanding evolves. Our vector database adapts its understanding as new code patterns emerge, automatically expanding its semantic model without requiring schema migrations or system downtime.
 
-**Real-Time Inference Integration**: Most traditional databases treat machine learning as an external process - data must be extracted, processed, and results written back. Our vector database natively supports real-time embedding generation, similarity computation, and semantic clustering, eliminating the latency overhead of external ML pipelines.
+- **Real-Time Inference Integration**: Most traditional databases treat machine learning as an external process - data must be extracted, processed, and results written back. Our vector database natively supports real-time embedding generation, similarity computation, and semantic clustering, eliminating the latency overhead of external ML pipelines.
 
-**Chain of Thought Engine: Mastra Framework Deep Dive**
+#### Chain of Thought Engine: Mastra Framework Deep Dive
 Our reasoning infrastructure, built on the Mastra framework, represents perhaps the most critical differentiator from traditional storage systems. While conventional systems can tell you what data was retrieved, they cannot explain why that data is relevant or how different pieces relate to each other.
 
-**Multi-Step Reasoning Architecture**: The Mastra framework enables complex reasoning chains that span multiple queries, data sources, and inference steps. Instead of single-shot retrieval, AI agents can engage in sophisticated reasoning patterns:
+- **Multi-Step Reasoning Architecture**: The Mastra framework enables complex reasoning chains that span multiple queries, data sources, and inference steps. Instead of single-shot retrieval, AI agents can engage in sophisticated reasoning patterns:
+  - **Hypothesis Formation**: Agents can form initial hypotheses about what information might be relevant
+  - **Evidence Gathering**: Systematic collection of supporting or contradicting evidence from multiple sources  
+  - **Iterative Refinement**: Continuous refinement of understanding as new information becomes available
+  - **Alternative Path Exploration**: Parallel exploration of different reasoning approaches to ensure comprehensive coverage
 
-- **Hypothesis Formation**: Agents can form initial hypotheses about what information might be relevant
-- **Evidence Gathering**: Systematic collection of supporting or contradicting evidence from multiple sources  
-- **Iterative Refinement**: Continuous refinement of understanding as new information becomes available
-- **Alternative Path Exploration**: Parallel exploration of different reasoning approaches to ensure comprehensive coverage
+- **Reasoning Trace Storage and Analysis**: Every reasoning chain generates a complete trace that captures not just the final result, but the entire decision-making process. These traces serve multiple critical functions:
+  - **Audit Compliance**: Enterprise customers can verify that AI decisions follow approved reasoning patterns
+  - **Performance Optimization**: Analysis of reasoning traces reveals bottlenecks and inefficient thought patterns
+  - **Knowledge Transfer**: Successful reasoning patterns can be shared across different AI agents
+  - **Error Analysis**: When reasoning fails, traces provide precise insight into where and why the failure occurred
 
-**Reasoning Trace Storage and Analysis**: Every reasoning chain generates a complete trace that captures not just the final result, but the entire decision-making process. These traces serve multiple critical functions:
+- **Collaborative Reasoning Infrastructure**: Unlike single-agent systems, our Mastra implementation supports sophisticated multi-agent reasoning patterns. Multiple AI agents can collaborate on complex problems, with the system managing:
+  - **Reasoning Conflict Resolution**: When different agents reach different conclusions, the system mediates and seeks consensus
+  - **Knowledge Sharing Protocols**: Agents can share intermediate reasoning steps without exposing proprietary training data
+  - **Workload Distribution**: Complex reasoning tasks are automatically distributed across available agents based on their specializations
+  - **Quality Assurance**: Cross-verification of critical reasoning steps by multiple independent agents
 
-- **Audit Compliance**: Enterprise customers can verify that AI decisions follow approved reasoning patterns
-- **Performance Optimization**: Analysis of reasoning traces reveals bottlenecks and inefficient thought patterns
-- **Knowledge Transfer**: Successful reasoning patterns can be shared across different AI agents
-- **Error Analysis**: When reasoning fails, traces provide precise insight into where and why the failure occurred
-
-**Collaborative Reasoning Infrastructure**: Unlike single-agent systems, our Mastra implementation supports sophisticated multi-agent reasoning patterns. Multiple AI agents can collaborate on complex problems, with the system managing:
-
-- **Reasoning Conflict Resolution**: When different agents reach different conclusions, the system mediates and seeks consensus
-- **Knowledge Sharing Protocols**: Agents can share intermediate reasoning steps without exposing proprietary training data
-- **Workload Distribution**: Complex reasoning tasks are automatically distributed across available agents based on their specializations
-- **Quality Assurance**: Cross-verification of critical reasoning steps by multiple independent agents
-
-**Code Understanding Infrastructure: Semantic Code Analysis at Scale**
+#### Code Understanding Infrastructure: Semantic Code Analysis at Scale
 Traditional code analysis tools work at the syntactic level - understanding the structure of code but missing its semantic meaning. Our code understanding infrastructure operates at multiple levels simultaneously, providing unprecedented insight into code behavior and relationships.
 
-**Multi-Language AST Unification**: Rather than treating each programming language separately, our system maintains a unified semantic representation across languages. This enables profound capabilities:
+- **Multi-Language AST Unification**: Rather than treating each programming language separately, our system maintains a unified semantic representation across languages. This enables profound capabilities:
+  - **Cross-Language Pattern Recognition**: Identifying similar algorithms implemented in different languages
+  - **Polyglot Refactoring**: Suggesting improvements that leverage patterns successful in other languages
+  - **Architectural Consistency**: Ensuring design patterns remain consistent across multi-language codebases
+  - **Knowledge Transfer**: Learning from best practices in one language and applying them elsewhere
 
-- **Cross-Language Pattern Recognition**: Identifying similar algorithms implemented in different languages
-- **Polyglot Refactoring**: Suggesting improvements that leverage patterns successful in other languages
-- **Architectural Consistency**: Ensuring design patterns remain consistent across multi-language codebases
-- **Knowledge Transfer**: Learning from best practices in one language and applying them elsewhere
+- **Semantic Dependency Mapping**: Traditional dependency analysis tracks explicit imports and references. Our semantic analysis understands implicit dependencies - code that doesn't directly reference other code but depends on its behavior or data structures. This enables:
+  - **Impact Analysis**: Understanding the full scope of changes before they're made
+  - **Risk Assessment**: Identifying potentially dangerous modifications based on semantic coupling
+  - **Optimization Opportunities**: Finding code that could be simplified by better leveraging existing functionality
+  - **Architectural Cleanup**: Identifying and removing semantic dependencies that create hidden coupling
 
-**Semantic Dependency Mapping**: Traditional dependency analysis tracks explicit imports and references. Our semantic analysis understands implicit dependencies - code that doesn't directly reference other code but depends on its behavior or data structures. This enables:
-
-- **Impact Analysis**: Understanding the full scope of changes before they're made
-- **Risk Assessment**: Identifying potentially dangerous modifications based on semantic coupling
-- **Optimization Opportunities**: Finding code that could be simplified by better leveraging existing functionality
-- **Architectural Cleanup**: Identifying and removing semantic dependencies that create hidden coupling
-
-**Real-Time Code Intelligence**: As developers write code, our analysis engine provides continuous insights without requiring explicit compilation or analysis requests:
+- **Real-Time Code Intelligence**: As developers write code, our analysis engine provides continuous insights without requiring explicit compilation or analysis requests:
 
 - **Instant Pattern Recognition**: Identifying common patterns as they're being written
 - **Proactive Error Prevention**: Warning about potential issues before code is executed
@@ -299,6 +324,8 @@ As code and documentation evolve, maintaining coherent understanding across all 
 - **Learning Events**: As AI agents discover new patterns, this knowledge propagates to other agents
 - **Performance Events**: System performance data drives automatic optimization decisions
 - **Security Events**: Security-relevant changes trigger immediate re-analysis of affected code
+
+---
 
 ## 🔍 Core Capabilities Deep Dive
 
@@ -573,6 +600,8 @@ One of our most powerful capabilities is recognizing successful patterns in one 
 - **Incremental Migration**: Supporting gradual migration strategies that minimize risk
 - **Knowledge Transfer**: Helping teams understand how their existing knowledge applies to new frameworks
 
+---
+
 ## 📈 Performance and Reliability
 
 ### Engineered for AI Workload Patterns
@@ -720,6 +749,8 @@ Continuous analysis of AI system performance drives ongoing optimization:
 - **Cache Policy Adaptation**: Adjusting caching strategies based on AI agent access patterns
 - **Resource Allocation Optimization**: Fine-tuning resource allocation for maximum efficiency
 - **Algorithm Performance Testing**: A/B testing different AI algorithms for optimal performance
+
+---
 
 ## 🛡️ Security and Compliance for AI Systems
 
@@ -975,11 +1006,15 @@ The benefits of AI-first development should be available to developers worldwide
 
 The future we're building is not just about better tools - it's about fundamentally transforming how software is created, making development more efficient, more accessible, and more collaborative than ever before. The evidence from adoption rates, productivity improvements, and developer satisfaction indicates we're on the right path. Now it's about execution and community building to make this vision reality.
 
+---
+
 ## 🤝 Contributing to the Future
 
 The AI-first development revolution is just beginning, and we welcome contributions from developers, researchers, and organizations who share our vision. Whether you're interested in improving core algorithms, adding support for new programming languages, or integrating with existing tools, there are opportunities to make a meaningful impact.
 
 Our development process emphasizes code quality, comprehensive testing, and clear documentation. We maintain high standards while welcoming contributors of all experience levels. The combination of rigorous engineering practices and open collaboration ensures that the platform continues to evolve rapidly while maintaining enterprise-grade reliability.
+
+---
 
 ## 📞 Getting Started and Support
 
